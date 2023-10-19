@@ -1,0 +1,10 @@
+
+
+@media (max-width: 400px){
+    div{
+        &:not(.no-scale){
+            transform: scale(0.8);
+        }
+    }
+}
+    

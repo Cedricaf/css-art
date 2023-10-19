@@ -1,0 +1,17 @@
+@use './abstract/colors';
+@use './abstract/mixings';
+
+
+body {
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 4rem;
+    font-family: 'AR One Sans', sans-serif;
+    min-height: 400px;
+    height: 100vh;
+    position: relative;
+    background: colors.$darkslateblue;
+    overflow: hidden;
+}

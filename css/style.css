@@ -1,0 +1,42 @@
+*,
+*:before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  min-height: 400px;
+  overflow: scroll;
+}
+
+body {
+  font-size: 2rem;
+}
+
+body {
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 4rem;
+  font-family: "AR One Sans", sans-serif;
+  min-height: 400px;
+  height: 100vh;
+  position: relative;
+  background: #4e4296;
+  overflow: hidden;
+}
+
+@keyframes popup {
+  from {
+    opacity: 0;
+    transform: translateY(2rem);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0rem);
+  }
+}/*# sourceMappingURL=style.css.map */
