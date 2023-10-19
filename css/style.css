@@ -26,7 +26,7 @@ body {
   min-height: 400px;
   height: 100vh;
   position: relative;
-  background: #4e4296;
+  background: rgba(239, 114, 31, 0.5019607843);
   overflow: hidden;
 }
 
@@ -39,4 +39,41 @@ body {
     opacity: 1;
     transform: translateY(0rem);
   }
+}
+:root {
+  --size: 100;
+  --unit: calc((var(--size) / 100) * 1vmin);
+}
+
+.pumpkin {
+  height: calc(var(--unit) * 100);
+  width: calc(var(--unit) * 100);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.pumpkin::before {
+  content: "";
+  display: block;
+  height: 50%;
+  width: 50%;
+  position: absolute;
+  top: 50%;
+  left: 25%;
+  transform: translate(-25%, -50%);
+  background: radial-gradient(50% 75% at 50% 50%, #ef721f 50%, transparent 50%) 50% 55%/50% 50%, radial-gradient(50% 83% at 50% 50%, #f28d4a 50%, transparent 50%) 50% 51%/50% 50%, radial-gradient(38% 82% at 0% 50%, #95430e 50%, transparent 55%) 107% 51%/50% 45%, radial-gradient(55% 43% at 100% 100%, transparent 25%, #3fa12f 25% 50%, transparent 50%) 39% -13%/30% 40%, radial-gradient(55% 43% at 100% 100%, transparent 25%, #7bb566 25% 50%, transparent 50%) 35% -14%/34% 40%, radial-gradient(50% 75% at 50% 50%, #ef721f 50%, transparent 50%) 35% 55%/50% 50%, radial-gradient(50% 83% at 50% 50%, #f28d4a 50%, transparent 50%) 35% 51%/50% 50%, radial-gradient(50% 75% at 50% 50%, #ef721f 50%, transparent 50%) 25% 55%/50% 50%, radial-gradient(50% 83% at 50% 50%, #f28d4a 50%, transparent 50%) 25% 51%/50% 50%, radial-gradient(50% 75% at 50% 50%, #ef721f 50%, transparent 50%) 65% 55%/50% 50%, radial-gradient(50% 83% at 50% 50%, #ef721f 50%, transparent 50%) 65% 51%/50% 50%, radial-gradient(50% 75% at 50% 50%, #ef721f 50%, transparent 50%) 75% 55%/50% 50%, radial-gradient(50% 83% at 50% 50%, #f28d4a 50%, transparent 50%) 75% 51%/50% 50%;
+  background-repeat: no-repeat;
+}
+.pumpkin::after {
+  content: "";
+  display: block;
+  height: 50%;
+  width: 50%;
+  position: absolute;
+  top: 50%;
+  left: 70%;
+  transform: translate(-25%, -50%);
+  background: linear-gradient(to top, goldenrod 4%, #cf580c 4%) -34% 54%/50% 37%, linear-gradient(174deg, transparent 50%, peru 50%) -7% 15%/37% 48%, radial-gradient(50% 75% at 0% 50%, #eb650c 50%, transparent 50%) 65% 55%/50% 50%, radial-gradient(50% 83% at 0% 50%, #f28c4c 50%, transparent 50%) 65% 51%/50% 50%;
+  background-repeat: no-repeat;
 }/*# sourceMappingURL=style.css.map */

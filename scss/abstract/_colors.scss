@@ -1,7 +1,20 @@
-$background: #F8F4EA;
+$background: #ef721f80;
+
+$orange:#ef721f;
+$lightOrange:#f28d4a;
+$otherOrange:#cf580c;
+$darkOrange:#95430e;
+$darkGreen:#3fa12f;
+$lightGreen:#7bb566;
+$gold:goldenrod;
+$peru:peru;
+
 
 $cyan: #54BAB9;
 
 $gradient: linear-gradient(to bottom right,#54BAB9, darken(#54BAB9, 20%));
 
 $darkslateblue: #4e4296;
+
+$size: 100;
+$unit: calc((var($size) / 100) * 1vmin);
